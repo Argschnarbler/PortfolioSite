@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Meikle | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <!-- Nav -->
+    
+    <div data-magellan-expedition="fixed"> 
+    	<dl class="sub-nav"> 
+    		<dd data-magellan-arrival="about"><a href="#About">About</a></dd> 
+    		<dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd> 
+    	</dl> 
+    </div>
+    
+    
+    <!-- Banner -->
+    <div class="row">
+	    	<div class="large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 columns text-center" >
+	    		<h1> Jacob Meikle's Portfolio</h1>
+	    		<img id="bannerImg" src="img/logo.png"	alt="Jacob Meikle's logo"/> 
+	    	</div>
+	    	<div class="large-1 medium-1 small-1 columns"> </div>
+    </div>
+    	
+    <!-- Content -->	
+    <div class="row">
+    	
+	      	<!-- About Section -->	
+	      	<section id="about" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+				<h2 class="text-center">About</h2>
+				<p>about content</p>
+	      	</section>
+	  	
+	      	<div class="large-1 medium-1 small-1 columns"> </div>
+      	
+	</div>
+	
+	 <div class="row">
+    	
+	      	<!-- Projects Section -->	
+	      	<section id="projects" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+				<h2 class="text-center">Projects</h2>
+				<p>projects content</p>
+	      	</section>
+	  	
+	      	<div class="large-1 medium-1 small-1 columns"> </div>
+      	
+	</div>
+	
+	 <div class="row">
+    	
+	      	<!-- Services Section -->	
+	      	<section id="services" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+				<h2 class="text-center">Services</h2>
+				<p>services content</p>
+	      	</section>
+	  	
+	      	<div class="large-1 medium-1 small-1 columns"> </div>
+      	
+	</div>
+	
+	 <div class="row">
+    	
+	      	<!-- Contact Section -->	
+	      	<section id="contact" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+				<h2 class="text-center">Contact Me</h2>
+				<p>contact buttons </p>
+	      	</section>
+	  	
+	      	<div class="large-1 medium-1 small-1 columns"> </div>
+      	
+	</div>
+	
+	<!-- Footer -->
+    <div class="row">
+	    	<div class="large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 columns" > 
+	    	<footer class="text-center">All Rights Reserved &copy; Jacob Meikle 2014 </footer>
+	    	</div>
+	    	<div class="large-1 medium-1 small-1 columns"> </div>
+    </div>
+	
+	 <!-- Javascript Libraries -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
+    
+     <!-- Javascript Custom -->
+    <script>
+		$(document).foundation();
+      
+		$('a').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+    </script>
+  </body>
+</html>
