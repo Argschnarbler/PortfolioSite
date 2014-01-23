@@ -1,0 +1,57 @@
+/* custom styles*/  
+body{
+
+	background-image:url('../img/paper_fibers.png');
+	
+}
+
+section{
+	min-height:400px;
+	
+}
+
+.navAnchor{
+	position:relative;
+	top:-25px;
+
+}
+
+#keepConnected{
+	position: fixed;
+	
+}
+
+#action{
+	position:absolute;
+	
+}
+
+#bioArticle{
+	width:60%
+	
+}
+
+#bioImage{
+	background-image:url('../img/paper_fibersbk.png');
+	padding: 1%;
+}
+
+#mainBody{
+	
+	border: #000000 solid 1px;
+}
+
+#bannerImg{
+	
+	max-height:100px;
+}
+
+h1{
+	display:none;
+}
+
+#welcome{
+	margin-top:20px;
+}
+
+

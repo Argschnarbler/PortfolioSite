@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Meikle | Portfolio</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/modernizr.js"></script>
   </head>
@@ -32,14 +32,24 @@
     	 </dl> 
     </div>
     
-    
     <!-- Banner -->
     <div class="row">
-	    	<div class="large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 columns text-center" >
+	    <div class="large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 columns text-center" >
 	    		<h1> Jacob Meikle's Portfolio</h1>
 	    		<img id="bannerImg" src="img/logo.png"	alt="Jacob Meikle's logo"/> 
-	    	</div>
-	    	<div class="large-1 medium-1 small-1 columns"> </div>
+	    </div>
+	    <div class="large-1 medium-1 small-1 columns"> </div>
+    </div>
+    
+    <!-- Welcome -->
+    
+    <div class="row" id="welcome">
+    	<a id="action" class="small button" href="#projects"> View my Work </a>
+    	<div class="large-10 large-offset-1 medium-10 small-10 small-offset-1 columns text-center" >
+	    		<p> welcome to my digital abode</p>
+	    	
+	    </div>
+	    <div class="large-1 medium-1 small-1 columns"> </div>	
     </div>
     	
     <!-- Content -->	
@@ -52,7 +62,7 @@
 				<h2 class="text-center">Bio</h2>
 				
 				<div class="row">
-					<img class="large-3 medium-3 small-3 columns" id="bioImage" src="img/jake-photo.jpg" alt="A picture of Jacob Meikle walking down a boardwalk." />
+					<img class="large-3 medium-3 small-3 columns" id="bioImage" src="img/bioLarge.jpg" alt="A picture of Jacob Meikle walking down a boardwalk." />
 					
 					
 					<article class="large-8 medium-8 small-8 small-offset-1 medium-offset-1 large-offset-1 columns">
@@ -123,17 +133,24 @@
     <script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/linkScroller.js"></script>
     
      <!-- Javascript Custom -->
     <script>
 		$(document).foundation();
-      
-		$('a').click(function(){
-		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
+		
+		$( window ).resize(function() {
+			 if($(window).width() <= 510) {
+			 	//swap bio image for a smaller one
+			 	 $("#bioImage").attr("src", "img/bioSmall.jpg");
+			 }
+			 else
+			 {
+			 	$("#bioImage").attr("src", "img/bioLarge.jpg");
+			 }
 		});
+				
+		
     </script>
   </body>
 </html>
