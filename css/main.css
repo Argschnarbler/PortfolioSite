@@ -33,6 +33,18 @@ body{
 	
 }
 
+
+
+#bioArticle{
+	width:60%
+	
+}
+
+#bioImage{
+	background-image:url('../img/paper_fibersbk.png');
+	padding: 1%;
+}
+
 #mainBody{
 	
 	border: #000000 solid 1px;
