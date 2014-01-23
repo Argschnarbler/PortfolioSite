@@ -12,11 +12,24 @@
     
     <!-- Nav -->
     
-    <div data-magellan-expedition="fixed"> 
-    	<dl class="sub-nav"> 
-    		<dd data-magellan-arrival="about"><a href="#About">About</a></dd> 
-    		<dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd> 
-    	</dl> 
+    <div data-magellan-expedition="fixed">
+    	 <dl class="sub-nav"> 
+    	 	<dd data-magellan-arrival="about">
+    	 		<a href="#about">About</a>
+    	 	</dd> 
+    	 	<dd data-magellan-arrival="projects">
+    	 		<a href="#projects">Projects</a>
+    	 	</dd> 
+    	 	<dd data-magellan-arrival="services">
+    	 		<a href="#services">Services</a>
+    	 	</dd> 
+    	 	<dd data-magellan-arrival="contact">
+    	 		<a href="#contact">Contact Me</a>
+    	 	</dd> 
+    	 	<dd>
+    	 		<a href="https://github.com/Argschnarbler">Git Hub</a>
+    	 	</dd> 
+    	 </dl> 
     </div>
     
     
@@ -32,21 +45,23 @@
     <!-- Content -->	
     <div class="row">
     	
-	      	<!-- About Section -->	
-	      	<section id="about" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+	      	<!-- About Section -->
+	      	<a id="about" class="navAnchor" data-magellan-destination="about"></a> 	
+	      	
+	      	<section class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
 				<h2 class="text-center">Bio</h2>
 				
 				<div class="row">
-					<img class="large-2 medium-2 small-2 small-offset-1 medium-offset-1 large-offset-1 columns" id="bioImage" src="img/jake-photo.jpg" alt="A picture of Jacob Meikle walking down a boardwalk." />
+					<img class="large-3 medium-3 small-3 columns" id="bioImage" src="img/jake-photo.jpg" alt="A picture of Jacob Meikle walking down a boardwalk." />
 					
 					
-					<article class="large-8 medium-8 small-8 columns">
+					<article class="large-8 medium-8 small-8 small-offset-1 medium-offset-1 large-offset-1 columns">
 						 Jacob Meikle is a talented computer programmer, web developer and game designer from Barrie, Ontario.
 						 He enjoys anything logical and scarcely gets excercise. He's much too busy coding, coding coding...
 						 There's nothing he'd rather do than make cool digital stuff!		
 					</article>
 					
-					<div class="large-1 medium-1 small-1 columns"> </div>
+		
 				</div>
 				
 				
@@ -59,8 +74,9 @@
 	 <div class="row">
     	
 	      	<!-- Projects Section -->	
-	      	<section id="projects" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
-				<h2 class="text-center">Projects</h2>
+	      	<a id="projects" class="navAnchor" data-magellan-destination="projects"></a> 		
+	      	<section class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+				<h2 class="text-center" data-magellan-destination="projects">Projects</h2>
 				<p>projects content</p>
 	      	</section>
 	  	
@@ -69,10 +85,11 @@
 	</div>
 	
 	 <div class="row">
-    	
-	      	<!-- Services Section -->	
+    		
+	      	<!-- Services Section -->
+	      	<a id="services" class="navAnchor" data-magellan-destination="services"></a> 		
 	      	<section id="services" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
-				<h2 class="text-center">Services</h2>
+				<h2 class="text-center" data-magellan-destination="services">Services</h2>
 				<p>services content</p>
 	      	</section>
 	  	
@@ -82,9 +99,10 @@
 	
 	 <div class="row">
     	
-	      	<!-- Contact Section -->	
+	      	<!-- Contact Section -->
+	      	<a id="contact" class="navAnchor" data-magellan-destination="contact"></a> 	
 	      	<section id="contact" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
-				<h2 class="text-center">Contact Me</h2>
+				<h2 class="text-center" data-magellan-destination="contact">Contact Me</h2>
 				<p>contact buttons </p>
 	      	</section>
 	  	

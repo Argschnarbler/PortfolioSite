@@ -33,7 +33,16 @@ body{
 	
 }
 
+section{
+	min-height:400px;
+	
+}
 
+.navAnchor{
+	position:relative;
+	top:-25px;
+
+}
 
 #bioArticle{
 	width:60%
