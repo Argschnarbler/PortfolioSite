@@ -1894,7 +1894,7 @@ meta.foundation-mq-topbar {
 
 button, .button {
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Love Ya Like A Sister', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1908,7 +1908,7 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #008cba;
+  background-color: orange;
   border-color: #0079a1;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
@@ -1920,7 +1920,7 @@ button, .button {
   border: none;
   font-weight: normal !important; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #0079a1; }
+    background-color: orangered; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -2631,10 +2631,13 @@ a.th {
     line-height: 50px;
     color: white;
     text-indent: -9999px !important;
-    z-index: 10; }
+    z-index: 10; 
+     background-color: rgba(0, 0, 0, 0.3)
+    }
+    
     .orbit-container .orbit-prev:hover,
     .orbit-container .orbit-next:hover {
-      background-color: rgba(0, 0, 0, 0.3); }
+      background-color: rgba(0, 0, 0, 0.5); }
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
       position: absolute;

@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Meikle | Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/modernizr.js"></script>
+    
+    <!-- custom fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+    
   </head>
   <body>
-    
+  	
     <!-- Nav -->
     
-    <div data-magellan-expedition="fixed">
+    <nav  data-magellan-expedition="fixed">
     	 <dl class="sub-nav"> 
     	 	<dd data-magellan-arrival="about">
     	 		<a href="#about">About</a>
@@ -24,73 +28,111 @@
     	 		<a href="#services">Services</a>
     	 	</dd> 
     	 	<dd data-magellan-arrival="contact">
-    	 		<a href="#contact">Contact Me</a>
+    	 		<a href="#contact">Contact</a>
     	 	</dd> 
     	 	<dd>
     	 		<a href="https://github.com/Argschnarbler">Git Hub</a>
     	 	</dd> 
     	 </dl> 
-    </div>
+    </nav>
     
+
     <!-- Banner -->
+  
+    
     <div class="row">
-	    <div class="large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 columns text-center" >
+    	<img id="bannerImg" src="img/logo.png"	alt="Jacob Meikle's logo"/> 
+	    <div class="large-11 columns text-center" >
 	    		<h1> Jacob Meikle's Portfolio</h1>
-	    		<img id="bannerImg" src="img/logo.png"	alt="Jacob Meikle's logo"/> 
+	    		
 	    </div>
-	    <div class="large-1 medium-1 small-1 columns"> </div>
     </div>
     
     <!-- Welcome -->
     
     <div class="row" id="welcome">
-    	<a id="action" class="small button" href="#projects"> View my Work </a>
-    	<div class="large-10 large-offset-1 medium-10 small-10 small-offset-1 columns text-center" >
-	    		<p> welcome to my digital abode</p>
-	    	
-	    </div>
-	    <div class="large-1 medium-1 small-1 columns"> </div>	
+	    <h3 class="large-12 columns text-center " > welcome to my digital abode</h3>
     </div>
+    
+    
+     <!-- Personal Tag Line -->
+    
+    <div class="row" id="tag">
+    	<div class="large-12 columns text-center" >
+	    		<p>I Make cool stuff<br/> </p>
+	    			<p> I make cool stuff because <br/>
+	    				It helps people<br/>
+	    				It's fun<br/>
+	    				It makes me rich
+	    			</p>
+	    		 	<a id="action" class="small button" href="#projects"> View my Work </a>
+	    </div>
+    </div>
+    
+
     	
-    <!-- Content -->	
+    <!-- Content -->
     <div class="row">
     	
 	      	<!-- About Section -->
 	      	<a id="about" class="navAnchor" data-magellan-destination="about"></a> 	
 	      	
-	      	<section class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+	      	<section class="large-12 columns">
 				<h2 class="text-center">Bio</h2>
 				
 				<div class="row">
 					<img class="large-3 medium-3 small-3 columns" id="bioImage" src="img/bioLarge.jpg" alt="A picture of Jacob Meikle walking down a boardwalk." />
 					
 					
+					
 					<article class="large-8 medium-8 small-8 small-offset-1 medium-offset-1 large-offset-1 columns">
+						<p>
 						 Jacob Meikle is a talented computer programmer, web developer and game designer from Barrie, Ontario.
 						 He enjoys anything logical and scarcely gets excercise. He's much too busy coding, coding coding...
-						 There's nothing he'd rather do than make cool digital stuff!		
+						 There's nothing he'd rather do than make cool digital stuff!	
+						</p>
+
+						 <a href="#"> 
+						 	<img class="hide-for-small-only" src="img/resume.jpg"	 id="resume" alt"A picture of lined paper with the word résumé on it."/> 
+						 	<img class="show-for-small-only" src="img/resume.jpg"	 id="resume-small" alt"A picture of lined paper with the word résumé on it."/> 
+						 </a>
 					</article>
+					
 					
 		
 				</div>
 				
 				
 	      	</section>
-	  	
-	      	<div class="large-1 medium-1 small-1 columns"> </div>
-      	
+
 	</div>
 	
 	 <div class="row">
     	
 	      	<!-- Projects Section -->	
 	      	<a id="projects" class="navAnchor" data-magellan-destination="projects"></a> 		
-	      	<section class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+	      	<section class="large-12 columns">
 				<h2 class="text-center" data-magellan-destination="projects">Projects</h2>
-				<p>projects content</p>
+				
+				<div class="row" id="slider">
+					<!-- slider -->
+					<ul class="example-orbit large-12 columns" data-orbit >
+						 <li> 
+						 	<img src="img/slider/project1.png" alt="slide 1" /> 
+						 	<div class="orbit-caption"> Port Carling Boats </div> 
+						 </li> 
+						 <li> 
+						 	<img src="img/slider/project2.png" alt="slide 2" /> 
+						 	<div class="orbit-caption"> Ontario Cottage Rentals </div> 
+						 </li> 
+						 <li> 
+						 	<img src="img/slider/project3.png" alt="slide 3" /> 
+						 	<div class="orbit-caption"> Realty Sites Plus </div> 
+						 </li> 
+					</ul>
+				</div>
+				
 	      	</section>
-	  	
-	      	<div class="large-1 medium-1 small-1 columns"> </div>
       	
 	</div>
 	
@@ -98,12 +140,42 @@
     		
 	      	<!-- Services Section -->
 	      	<a id="services" class="navAnchor" data-magellan-destination="services"></a> 		
-	      	<section id="services" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+	      	<section id="services" class="large-12 columns">
 				<h2 class="text-center" data-magellan-destination="services">Services</h2>
-				<p>services content</p>
+				
+				<div class="row text-center">			
+					<p class=" large-3 medium-3 small-3 columns"> 1 Hour Consultaion </p> 	<p class=" large-6 medium-6 small-6 columns">...</p> 	<p class=" large-3 medium-3 small-3 columns">$0</p>
+				</div>
+					
+				<div class="row text-center">
+					<p class="large-12 medium-12 small-12"> You may inquire with me on the phone or on skype for an hour to discuss what you need for your website. </p>
+				</div>
+				
+				<div class="row text-center">			
+					<p class=" large-3 medium-3 small-3 columns"> Web Maintenance</p> 	<p class=" large-6 medium-6 small-6 columns">...</p> 	<p class=" large-3 medium-3 small-3 columns">$30 / Hour</p>
+				</div>
+					
+				<div class="row text-center">
+					<p class="large-12 medium-12 small-12"> If your site needs a little work or an update. </p>
+				</div>
+				
+				<div class="row text-center">			
+					<p class=" large-3 medium-3 small-3 columns"> Basic Site </p> 	<p class=" large-6 medium-6 small-6 columns">...</p> 	<p class=" large-3 medium-3 small-3 columns">$2500</p>
+				</div>
+					
+				<div class="row text-center">
+					<p class="large-12 medium-12 small-12"> A custom made informational site with a content management system. </p>
+				</div>
+				
+				<div class="row text-center">			
+					<p class=" large-3 medium-3 small-3 columns"> Advanced Site </p> 	<p class=" large-6 medium-6 small-6 columns">...</p> 	<p class=" large-3 medium-3 small-3 columns">$4500</p>
+				</div>
+					
+				<div class="row text-center">
+					<p class="large-12 medium-12 small-12"> A custom made ecommerce / data heavy site with a content management system. </p>
+				</div>
+				
 	      	</section>
-	  	
-	      	<div class="large-1 medium-1 small-1 columns"> </div>
       	
 	</div>
 	
@@ -111,9 +183,9 @@
     	
 	      	<!-- Contact Section -->
 	      	<a id="contact" class="navAnchor" data-magellan-destination="contact"></a> 	
-	      	<section id="contact" class="large-10 medium-10 small-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+	      	<section id="contact" class="large-12 columns">
 				<h2 class="text-center" data-magellan-destination="contact">Contact Me</h2>
-				<p>contact buttons </p>
+				
 	      	</section>
 	  	
 	      	<div class="large-1 medium-1 small-1 columns"> </div>
@@ -139,16 +211,18 @@
     <script>
 		$(document).foundation();
 		
+		/*
 		$( window ).resize(function() {
-			 if($(window).width() <= 510) {
+			 if($(window).width() <= 510 &&  $("#bioImage").attr("src") == "img/bioLarge.jpg") {
 			 	//swap bio image for a smaller one
 			 	 $("#bioImage").attr("src", "img/bioSmall.jpg");
 			 }
-			 else
+			 else if( $(window).width() > 510 && $("#bioImage").attr("src") == "img/bioSmall.jpg")
 			 {
 			 	$("#bioImage").attr("src", "img/bioLarge.jpg");
 			 }
 		});
+		*/
 				
 		
     </script>
