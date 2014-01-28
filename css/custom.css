@@ -1,19 +1,8 @@
+/*<!-- File: custom.css Author: Jacob Meikle Website: Assignment1 File Desc: Custom Styles reside here. -->*/
+
+
 /* custom styles*/  
-
-/*
-@media only screen and (max-width: 320px) {
-
-  #welcome h3{
-  	
-  	font-size:20px;
-  }
-
-}
-
-*/
-
 body{
-	/* background-image: url("../img/bg-stripe2.png");*/
 	background-image: url("../img/bg.png");
 	background-repeat: y;
 }
@@ -52,8 +41,8 @@ section{
 	
 }
 
-#action{
-
+.icon{
+	max-height:50px;
 }
 
 #bioArticle{
